@@ -10,4 +10,4 @@ Player dapat mengambil power up agar dapat menyelesaikan permainan dengan lebih 
 - Bayu Ega Ferdana (122140129) *Not invited yet
 - Rizky Abdillah (122140127) *Not invited yet
 ### Progress
-Currently in development.
+_Currently in development._
