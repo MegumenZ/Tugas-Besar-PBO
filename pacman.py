@@ -2,27 +2,39 @@ import copy
 from board import boards
 import pygame
 import math
+import os
+
+
+
 
 pygame.init()
-
+pygame.mixer.init()
 WIDTH = 900
 HEIGHT = 950
 screen = pygame.display.set_mode([WIDTH, HEIGHT])
 timer = pygame.time.Clock()
 fps = 60
-font = pygame.font.Font('freesansbold.ttf', 20)
+font = pygame.font.Font('freesansbold.ttf', 20) 
 level = copy.deepcopy(boards)
-color = 'blue'
+color = 'white'
 PI = math.pi
+
+chomp_sound = pygame.mixer.Sound('saya.wav')
+sound_die = pygame.mixer.Sound('diee.wav')
+
+
+
+
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 player_images = []
 for i in range(1, 5):
     player_images.append(pygame.transform.scale(pygame.image.load(f'assets/player_images/{i}.png'), (45, 45)))
-blinky_img = pygame.transform.scale(pygame.image.load(f'assets/ghost_images/red.png'), (45, 45))
-pinky_img = pygame.transform.scale(pygame.image.load(f'assets/ghost_images/pink.png'), (45, 45))
-inky_img = pygame.transform.scale(pygame.image.load(f'assets/ghost_images/blue.png'), (45, 45))
-clyde_img = pygame.transform.scale(pygame.image.load(f'assets/ghost_images/orange.png'), (45, 45))
-spooked_img = pygame.transform.scale(pygame.image.load(f'assets/ghost_images/powerup.png'), (45, 45))
-dead_img = pygame.transform.scale(pygame.image.load(f'assets/ghost_images/dead.png'), (45, 45))
+blinky_img = pygame.transform.scale(pygame.image.load(f'assets/dragon_images/red.png'), (45, 45))
+pinky_img = pygame.transform.scale(pygame.image.load(f'assets/dragon_images/yellow.png'), (45, 45))
+inky_img = pygame.transform.scale(pygame.image.load(f'assets/dragon_images/green.png'), (45, 45))
+clyde_img = pygame.transform.scale(pygame.image.load(f'assets/dragon_images/purple.png'), (45, 45))
+spooked_img = pygame.transform.scale(pygame.image.load(f'assets/dragon_images/power.png'), (45, 45))
+dead_img = pygame.transform.scale(pygame.image.load(f'assets/dragon_images/dead.png'), (45, 45))
 player_x = 450
 player_y = 663
 direction = 0
@@ -58,9 +70,9 @@ inky_box = False
 clyde_box = False
 pinky_box = False
 moving = False
-ghost_speeds = [2, 2, 2, 2]
+ghost_speeds = [1, 1, 1, 1]
 startup_counter = 0
-lives = 3
+lives = 2
 game_over = False
 game_won = False
 
@@ -667,10 +679,15 @@ def draw_misc():
     for i in range(lives):
         screen.blit(pygame.transform.scale(player_images[0], (30, 30)), (650 + i * 40, 915))
     if game_over:
-        pygame.draw.rect(screen, 'white', [50, 200, 800, 300],0, 10)
-        pygame.draw.rect(screen, 'dark gray', [70, 220, 760, 260], 0, 10)
-        gameover_text = font.render('Game over! Space bar to restart!', True, 'red')
+        pygame.draw.rect(screen, 'red', [50, 200, 800, 300],0, 10)
+        pygame.draw.rect(screen, 'white', [70, 220, 760, 260], 0, 10)
+        gameover_text = font.render('Kyahh game berakhir ><! Tekan space untuk melanjutkan!', True, 'red')
         screen.blit(gameover_text, (100, 300))
+
+        chomp_sound.stop()
+        sound_die.play()
+
+
     if game_won:
         pygame.draw.rect(screen, 'white', [50, 200, 800, 300],0, 10)
         pygame.draw.rect(screen, 'dark gray', [70, 220, 760, 260], 0, 10)
@@ -888,9 +905,13 @@ while run:
         counter += 1
         if counter > 3:
             flicker = False
+
     else:
         counter = 0
         flicker = True
+    chomp_sound.play()
+
+
     if powerup and power_counter < 600:
         power_counter += 1
     elif powerup and power_counter >= 600:
@@ -1026,6 +1047,7 @@ while run:
             inky_dead = False
             clyde_dead = False
             pinky_dead = False
+            
         else:
             game_over = True
             moving = False
@@ -1057,6 +1079,7 @@ while run:
             inky_dead = False
             clyde_dead = False
             pinky_dead = False
+           
         else:
             game_over = True
             moving = False
@@ -1088,6 +1111,7 @@ while run:
             inky_dead = False
             clyde_dead = False
             pinky_dead = False
+            
         else:
             game_over = True
             moving = False
@@ -1119,6 +1143,7 @@ while run:
             inky_dead = False
             clyde_dead = False
             pinky_dead = False
+       
         else:
             game_over = True
             moving = False
@@ -1219,7 +1244,3 @@ while run:
 
     pygame.display.flip()
 pygame.quit()
-
-
-# sound effects, restart and winning messages
-
