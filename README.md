@@ -2,10 +2,10 @@
 Game ini akan mengadopsi gameplay Pac-Man, dimana player berusaha menghindar dari hantu-hantu yang mengejar dengan perilaku yang berbeda-beda.
 Jika player tersentuh hantu, maka game akan berakhir.
 Player dapat mengambil power up agar dapat menyelesaikan permainan dengan lebih mudah.
-# Pac-Man Clone
+# Nyemil Naga
 
 ## Deskripsi
-Pac-Man Clone adalah permainan arkade klasik yang didasarkan pada game Pac-Man. Pemain mengendalikan karakter Pac-Man, yang harus mengumpulkan semua titik di papan sambil menghindari hantu. Game ini dikembangkan menggunakan Python dan Pygame.
+Nyemil Naga adalah permainan arkade klasik yang didasarkan pada game Pac-Man. Pemain mengendalikan karakter Pac-Man, yang harus mengumpulkan semua titik di papan sambil menghindari hantu. Game ini dikembangkan menggunakan Python dan Pygame.
 
 ## Fitur
 - **Permainan Klasik Pac-Man**: Mengumpulkan titik-titik dan menghindari hantu.
