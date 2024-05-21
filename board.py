@@ -1,4 +1,5 @@
 # Definisikan peta
+# 1 : makanan, 2 : power up, 3 : garis vertikal, 4 : garis horizontal, 5 : sudut kanan atas, 6 : sudut kiri atas, 7 : sudut kiri bawah, 8 : sudut kanan bawah
 boards = [
     [6, 4, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5],
     [3, 6, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 6, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 3],
