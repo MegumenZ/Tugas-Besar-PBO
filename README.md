@@ -13,7 +13,6 @@ Nyemil Naga adalah permainan arkade klasik yang didasarkan pada game Pac-Man. Pe
 - **Karakter Hantu Naga**: Blinky, Inky, Pinky, dan Clyde dengan perilaku unik.
 - **Sistem Skor**: Dapatkan skor berdasarkan titik yang dikumpulkan dan hantu naga yang dimakan.
 - **Nyawa Pemain**: Pemain memiliki sejumlah nyawa yang terbatas.
-- **Main Menu**: Fitur untuk memulai permainan, melihat informasi tentang permainan, dan keluar dari permainan.
 
 ## Instalasi
 1. **Persyaratan**:
