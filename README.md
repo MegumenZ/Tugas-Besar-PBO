@@ -55,11 +55,13 @@ Nyemil Naga adalah permainan arkade klasik yang didasarkan pada game Pac-Man. Pe
 
 
 ### Collaborator
-- Luthfiandri Ardanie (122140089)
-- Dhias Erpangga Yoga (122140109)
-- Fiqri Aldiansyah (122140152)
-- Aldi Sanjaya (122140150) 
-- Bayu Ega Ferdana (122140129)
-- Rizky Abdillah (122140127) 
+| **Nama**  | **NIM** |
+| ------------- | ------------- |
+| Luthfiandri Ardanie | 122140089 |
+| Dhias Erpangga Yoga | 122140109 |
+| Figri Aldiansyah | 122140152 |
+| Aldi Sanjaya | 122140150 |
+| Bayu Ega Ferdana | 122140129 |
+| Rizky Abdillah | 122140127 |
 ### Progress
 _Closed Beta Test Version._
