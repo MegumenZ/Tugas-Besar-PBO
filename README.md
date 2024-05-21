@@ -1,8 +1,8 @@
-### About Nyemil Naga
+### Nyemil Naga
+## About Nyemil Naga
 Game ini akan mengadopsi gameplay Pac-Man, dimana player berusaha menghindar dari hantu-hantu yang mengejar dengan perilaku yang berbeda-beda.
 Jika player tersentuh hantu, maka game akan berakhir.
 Player dapat mengambil power up agar dapat menyelesaikan permainan dengan lebih mudah.
-# Nyemil Naga
 
 ## Deskripsi
 Nyemil Naga adalah permainan arkade klasik yang didasarkan pada game Pac-Man. Pemain mengendalikan karakter Pac-Man, yang harus mengumpulkan semua titik di papan sambil menghindari hantu. Game ini dikembangkan menggunakan Python dan Pygame.
@@ -59,8 +59,8 @@ Nyemil Naga adalah permainan arkade klasik yang didasarkan pada game Pac-Man. Pe
 - Luthfiandri Ardanie (122140089)
 - Dhias Erpangga Yoga (122140109)
 - Fiqri Aldiansyah (122140152)
-- Aldi Sanjaya (122140150) *Not invited yet
-- Bayu Ega Ferdana (122140129) *Not invited yet
-- Rizky Abdillah (122140127) *Not invited yet
+- Aldi Sanjaya (122140150) 
+- Bayu Ega Ferdana (122140129)
+- Rizky Abdillah (122140127) 
 ### Progress
-_Currently in development._
+_Closed Beta Test Version._
