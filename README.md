@@ -53,6 +53,8 @@ Nyemil Naga adalah permainan arkade klasik yang didasarkan pada game Pac-Man. Pe
 - **utils.py**: Berisi fungsi utilitas untuk permainan.
 - **assets/**: Berisi gambar dan suara yang digunakan dalam permainan.
 
+## Diagram UML
+![Diagram UML.](https://github.com/MegumenZ/Tugas-Besar-PBO/blob/main/assets/Gambar%20WhatsApp%202024-05-20%20pukul%2019.53.44_48b1c5a7.jpg)
 
 ### Collaborator
 | **Nama**  | **NIM** |
